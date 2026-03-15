@@ -1,7 +1,10 @@
 #!/usr/bin/bash
 
-DIR=$(dirname "$0")
+git config "$1" advice.statusHints    false # do not pollute outputs with hints.
+git config "$1" push.autoSetupRemote  true  # create branch if does not exists.
 
+# load aliases
+DIR=$(dirname "$0")
 for file in "$DIR"/aliases/*; do
     source "$file" "$1"
 done
