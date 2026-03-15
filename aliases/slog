@@ -1,0 +1,1 @@
+git config "$1" alias.slog "!git log --color --date=relative --graph --format=format:'§%C(auto)%d%C(reset)§%C(03)%h%C(reset)§%C(bold 0)%s%C(reset)§%C(green)%an%C(reset)§%C(04)%ad%C(reset)' | column -t -s '§'"
