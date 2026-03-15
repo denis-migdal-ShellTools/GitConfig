@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+# Usage: git acp "Commit description"
+git config "$1" alias.acp '!f() { git add -A && git commit -m "$1" && git push } ; f'
