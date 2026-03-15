@@ -5,5 +5,5 @@ Usage : `./configure [--global]`
 
 ## Aliases
 
-- acp : add, commit, push
-- slog : short formatted git log.
+- `acp` : add, commit, push
+- `slog` : short formatted git log.
